@@ -14,6 +14,382 @@
 	<!-- Do whatever you want with this skin,but don't tell it's yours, or your idea --> 
 	<!--    and leave the credentials in the "About-box" as they are -->
 
+<!-- ***** sfpanel ***** -->
+
+	<screen name="extrapanel" title="extrapanel" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Ext_BiN"/>
+		<panel name="p800_Date"/>
+		<panel name="M"/>
+		<panel name="sR"/>
+		<panel name="sRG"/>
+		<panel name="sRGY"/>
+		<panel name="sRGYB"/>
+		<widget source="menu" render="Listbox" position="45,180" size="845,720" scrollbarMode="showOnDemand" transparent="1" zPosition="5" 
+ 			selectionPixmap="box/slider.png" backgroundPixmap="box/sliderb.png" >
+ 			<convert type="TemplatedMultiContent">
+ 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (830, 60), flags = RT_HALIGN_LEFT, text = 0)],
+ 				"fonts": [gFont("Regular", 35)],
+ 				"itemHeight": 60
+ 				}
+ 			</convert>
+ 		</widget>
+		<widget source="menu" render="Listbox" position="1270,550" size="590,140" scrollbarMode="showNever" foregroundColor="ltbluette" backgroundColor="bluette" selectionDisabled="1" zPosition="3" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (0,0),size = (600,140),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+					],
+					"fonts": [gFont("Regular",32)],
+					"itemHeight": 140
+				}
+			</convert>
+		</widget>
+		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<ePixmap position="960,640" size="300,300" pixmap="menu/menusf.png" alphatest="blend"/>
+		
+		<ePixmap position="1270,38" size="200,90" pixmap="oDreamy-FHD/icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<!--eLabel name="DEBUG" text="S213" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<screen name="ToolsScreen2" title="Utilidades de servicio" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Ext_BiN"/>
+		<panel name="p800_Date"/>
+		<panel name="M"/>
+		<panel name="sR"/>
+		<widget source="menu" render="Listbox" position="45,180" size="845,720" scrollbarMode="showOnDemand" transparent="1" zPosition="5" 
+ 			selectionPixmap="box/slider.png" backgroundPixmap="box/sliderb.png" >
+ 			<convert type="TemplatedMultiContent">
+ 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (830, 60), flags = RT_HALIGN_LEFT, text = 0)],
+ 				"fonts": [gFont("Regular", 35)],
+ 				"itemHeight": 60
+ 				}
+ 			</convert>
+ 		</widget>
+		<widget source="menu" render="Listbox" position="1270,550" size="590,140" scrollbarMode="showNever" foregroundColor="ltbluette" backgroundColor="bluette" selectionDisabled="1" zPosition="3" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (0,0),size = (600,140),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+					],
+					"fonts": [gFont("Regular",32)],
+					"itemHeight": 140
+				}
+			</convert>
+		</widget>
+		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<ePixmap position="960,640" size="300,300" pixmap="menu/utility.png" alphatest="blend"/>
+		<ePixmap position="1270,38" size="200,90" pixmap="oDreamy-FHD/icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<!--eLabel name="DEBUG" text="S213" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+
+<screen name="epgdna" title="EPG downloader" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid"/>
+		<panel name="sRGYB"/>
+		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3" />
+		<ePixmap position="960,640" size="300,300" pixmap="menu/menuepg.png" alphatest="blend"/>
+		<widget source="lastupdate" render="Label" position="100,600" zPosition="2" size="810,60" font="Regular;30" halign="center" valign="center"/>
+	</screen>
+
+<screen name="get_source" title="Choice epg.dat source" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRG"/>
+		<widget source="menu" render="Listbox" position="70,180" size="820,720" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (5, 1), size = (810, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					],
+					"fonts": [gFont("Regular", 32)],
+					"itemHeight": 45
+				}
+			</convert>
+		</widget>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/menuepg.png" alphatest="blend"/>
+	</screen>
+
+<screen name="NTPScreen" title="Actualizacion NTP" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid"/>
+		<panel name="sRGYB"/>
+		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3" />
+		<ePixmap position="960,640" size="300,300" pixmap="menu/timer_edit.png" alphatest="blend"/>
+		
+	</screen>
+
+<screen name="ScriptScreen3" title="Ejecutar Script" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRGY"/>
+		<widget name="list" position="70,180" size="820,720" scrollbarMode="showOnDemand"/>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/ico_script.png" alphatest="blend"/>
+	</screen>
+
+	<screen name="SystemScreen" title="Utilidades de Sistema" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Ext_BiN"/>
+		<panel name="p800_Date"/>
+		<panel name="M"/>
+		<widget source="menu" render="Listbox" position="45,180" size="845,720" scrollbarMode="showOnDemand" transparent="1" zPosition="5" 
+ 			selectionPixmap="box/slider.png" backgroundPixmap="box/sliderb.png" >
+ 			<convert type="TemplatedMultiContent">
+ 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (830, 60), flags = RT_HALIGN_LEFT, text = 0)],
+ 				"fonts": [gFont("Regular", 35)],
+ 				"itemHeight": 60
+ 				}
+ 			</convert>
+ 		</widget>
+		<widget source="menu" render="Listbox" position="1270,550" size="590,140" scrollbarMode="showNever" foregroundColor="ltbluette" backgroundColor="bluette" selectionDisabled="1" zPosition="3" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (0,0),size = (600,140),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+					],
+					"fonts": [gFont("Regular",32)],
+					"itemHeight": 140
+				}
+			</convert>
+		</widget>
+		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<ePixmap position="960,640" size="300,300" pixmap="menu/setup_selection.png" alphatest="blend"/>
+		<ePixmap position="1270,38" size="200,90" pixmap="oDreamy-FHD/icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<!--eLabel name="DEBUG" text="S213" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+
+<screen name="ViewSet" title="View System Settings (/etc/enigma2/settings)" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p900_Template"/>
+		<panel name="p900_Date"/>
+		<panel name="fakeExit"/>
+		<widget name="text" position="70,180" size="1790,735" font="Console;24" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
+		<eLabel position="70,902" size="1790,10" backgroundColor="#20000000" zPosition="2"/>
+	</screen>
+
+<screen name="Info2Screen" title="Informacion Sistema)" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p900_Template"/>
+		<panel name="p900_Date"/>
+		<panel name="fakeExit"/>
+		<widget name="text" position="70,180" size="1790,735" font="Console;24" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
+		<eLabel position="70,902" size="1790,10" backgroundColor="#20000000" zPosition="2"/>
+	</screen>
+
+<screen name="KernelScreen" title="Gestion Modulos Kernel" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRGYB"/>
+		<widget source="menu" render="Listbox" position="70,180" size="820,720" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (60, 1), size = (810, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryText(pos = (80, 29), size = (580, 18), font=1, flags = RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (54, 54), png = 2),
+					],
+					"fonts": [gFont("Regular", 32),gFont("Regular", 20)],
+					"itemHeight": 55
+				}
+			</convert>
+		</widget>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/startboot.png" alphatest="blend"/>
+	</screen>
+<screen name="lsmodScreen" title="Kernel Drivers en memoria" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="p800_Logo"/>
+		<panel name="sR"/>
+		<widget source="menu" render="Listbox" position="70,180" size="820,720" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (60, 1), size = (810, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryText(pos = (80, 29), size = (580, 18), font=1, flags = RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (54, 54), png = 2),
+					],
+					"fonts": [gFont("Regular", 32),gFont("Regular", 20)],
+					"itemHeight": 55
+				}
+			</convert>
+		</widget>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/startboot.png" alphatest="blend"/>
+	</screen>
+
+<screen name="ServiceMan" title="Gestion de servicios" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRGY"/>
+		<widget source="menu" render="Listbox" position="70,180" size="820,720" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (5, 1), size = (810, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					],
+					"fonts": [gFont("Regular", 32)],
+					"itemHeight": 45
+				}
+			</convert>
+		</widget>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/input.png" alphatest="blend"/>
+	</screen>
+
+<screen name="SwapScreen2" title="Swap en USB/HDD" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="p800_Logo"/>
+		<panel name="sR"/>
+		<widget source="menu" render="Listbox" position="70,180" size="820,720" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (60, 1), size = (810, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryText(pos = (80, 29), size = (580, 18), font=1, flags = RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (54, 54), png = 2),
+					],
+					"fonts": [gFont("Regular", 32),gFont("Regular", 20)],
+					"itemHeight": 55
+				}
+			</convert>
+		</widget>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/swapp.png" alphatest="blend"/>
+	</screen>
+
+<screen name="SwapScreen" title="Swap en USB/HDD" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="p800_Logo"/>
+		<panel name="sR"/>
+		<widget source="menu" render="Listbox" position="70,180" size="820,720" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (60, 1), size = (810, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryText(pos = (80, 29), size = (580, 18), font=1, flags = RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (54, 54), png = 2),
+					],
+					"fonts": [gFont("Regular", 32),gFont("Regular", 20)],
+					"itemHeight": 55
+				}
+			</convert>
+		</widget>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/swapp.png" alphatest="blend"/>
+	</screen>
+<screen name="UsbScreen" title="Unmount manager" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRGY"/>
+		<widget source="menu" render="Listbox" position="70,180" size="820,720" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (60, 1), size = (810, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryText(pos = (80, 29), size = (580, 18), font=1, flags = RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (54, 54), png = 2),
+					],
+					"fonts": [gFont("Regular", 32),gFont("Regular", 20)],
+					"itemHeight": 55
+				}
+			</convert>
+		</widget>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/deviceusb.png" alphatest="blend"/>
+	</screen>
+
+<screen name="System2Screen" title="Utilidades de Usuario" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Ext_BiN"/>
+		<panel name="p800_Date"/>
+		<panel name="M"/>
+		<panel name="sRGY"/>
+		<widget source="menu" render="Listbox" position="45,180" size="845,720" scrollbarMode="showOnDemand" transparent="1" zPosition="5" 
+ 			selectionPixmap="box/slider.png" backgroundPixmap="box/sliderb.png" >
+ 			<convert type="TemplatedMultiContent">
+ 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (830, 60), flags = RT_HALIGN_LEFT, text = 0)],
+ 				"fonts": [gFont("Regular", 35)],
+ 				"itemHeight": 60
+ 				}
+ 			</convert>
+ 		</widget>
+		<widget source="menu" render="Listbox" position="1270,550" size="590,140" scrollbarMode="showNever" foregroundColor="ltbluette" backgroundColor="bluette" selectionDisabled="1" zPosition="3" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (0,0),size = (600,140),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+					],
+					"fonts": [gFont("Regular",32)],
+					"itemHeight": 140
+				}
+			</convert>
+		</widget>
+		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<ePixmap position="960,640" size="300,300" pixmap="menu/ico_user.png" alphatest="blend"/>
+		<ePixmap position="1270,38" size="200,90" pixmap="oDreamy-FHD/icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<!--eLabel name="DEBUG" text="S213" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+
+
+<screen name="DropScreen" title="Liberar Memoria" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid"/>
+		<panel name="sRGY"/>
+		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3" />
+		<ePixmap position="960,640" size="300,300" pixmap="menu/liberarmemoria.png" alphatest="blend"/>
+		<widget source="MemoryLabel" render="Label" position="55,435" size="150,22" font="Regular; 20" halign="right" foregroundColor="#aaaaaa" />
+	<widget source="memTotal" render="Label" position="220,435" zPosition="2" size="450,22" font="Regular;20" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+	<widget source="bufCache" render="Label" position="220,460" zPosition="2" size="450,22" font="Regular;20" halign="left" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+	</screen>
+
+<screen name="DDNSScreen" title="Configuracion DDNS" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid"/>
+		<panel name="sRGY"/>
+		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3" />
+		<ePixmap position="960,640" size="300,300" pixmap="menu/ico_inadyn.png" alphatest="blend"/>
+		
+	</screen>
+
+	<screen name="multimedia" title="multimedia" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Ext_BiN"/>
+		<panel name="p800_Date"/>
+		<panel name="M"/>
+		<panel name="sR"/>
+		<widget source="menu" render="Listbox" position="45,180" size="845,720" scrollbarMode="showOnDemand" transparent="1" zPosition="5" 
+ 			selectionPixmap="box/slider.png" backgroundPixmap="box/sliderb.png" >
+ 			<convert type="TemplatedMultiContent">
+ 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (830, 60), flags = RT_HALIGN_LEFT, text = 0)],
+ 				"fonts": [gFont("Regular", 35)],
+ 				"itemHeight": 60
+ 				}
+ 			</convert>
+ 		</widget>
+		<widget source="menu" render="Listbox" position="1270,550" size="590,140" scrollbarMode="showNever" foregroundColor="ltbluette" backgroundColor="bluette" selectionDisabled="1" zPosition="3" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (0,0),size = (600,140),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+					],
+					"fonts": [gFont("Regular",32)],
+					"itemHeight": 140
+				}
+			</convert>
+		</widget>
+		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<ePixmap position="960,640" size="300,300" pixmap="menu/ico_iptv.png" alphatest="blend"/>
+		<ePixmap position="1270,38" size="200,90" pixmap="oDreamy-FHD/icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<!--eLabel name="DEBUG" text="S213" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+<screen name="ConfigExtentions2" title="Configuracion sft-panel" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_DateMid"/>
+		<panel name="sRGYB"/>
+		<widget name="config" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3" />
+		<ePixmap position="960,640" size="300,300" pixmap="menu/setup_selection.png" alphatest="blend"/>
+		
+	</screen>
+<!-- ***** sfpanel ***** -->
+
 	<!-- ***** AutoBackup ***** -->
 	
 	<screen name="Config" position="fill" title="AutoBackup Configuration" flags="wfNoBorder" backgroundColor="transparent">
@@ -650,12 +1026,12 @@
 	<!-- ********** Cron Manager ********** P012 FHD -->
  
 	<!--  Cron Manager Config FHD --> 
- 	<screen name="CronTimersConfig" title="Cronmanager Menu" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+ 	<screen name="CrontabManAdd" title="Cronmanager Menu" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template"/>
 		<panel name="p800_DateMid"/>
 		<panel name="p800_Logo"/>
-		<panel name="nRGYB"/>
-		<widget name="menu" position="70,180" size="820,500" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
+		<panel name="sRG"/>
+		<widget name="config" position="70,180" size="820,500" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,640" size="256,256" pixmap="menu/cron.png" alphatest="blend"/>
  	</screen>
 
@@ -678,11 +1054,11 @@
  	</screen>
 	
 	<!--  Cron Manager Menu FHD --> 
-	<screen name="CronManager" position="fill" title="Cron Manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CrontabMan" position="fill" title="Cron Manager" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="p800_Template"/>
 		<panel name="p800_DateMid"/>
 		<panel name="p800_Logo"/>
-		<panel name="nRGYB"/>
+		<panel name="sRGY"/>
 		<panel name="M"/>
  		<widget name="lab1"        position="70,180"  size="250,40" font="Regular;32" halign="left"   valign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
  		<widget name="labactive"   position="350,180" size="540,40" font="Regular;32" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="green"  zPosition="1"/>
@@ -690,7 +1066,7 @@
  		<widget name="lab2"        position="70,240"  size="250,40" font="Regular;32" halign="left"   valign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
  		<widget name="labstop"     position="350,240" size="540,40" font="Regular;32" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="red"    zPosition="1"/>
  		<widget name="labrun"      position="350,240" size="540,40" font="Regular;32" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="green"  zPosition="1"/>
-		<widget source="list" render="Listbox" position="70,320" size="820,480" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
+		<widget source="menu" render="Listbox" position="70,320" size="820,480" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
 			<convert type="StringList" />
 		</widget>
  		<widget name="key"         position="70, 840" size="820,80" font="Regular;32" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>

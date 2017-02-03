@@ -84,6 +84,7 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <parameter name="DreamexplorerName" value="62,0,800,40"/>
 <parameter name="DreamexplorerIcon" value="15,4,30,30"/>
 </parameters>
+<include filename="/usr/share/enigma2/MX_HQ7/skin_plugins.xml"/>
 <windowstyle type="skinned" id="0">
 <title offset="30,16" font="Regular;48"/>
 <color name="Background" color="#00000000"/>
@@ -99,28 +100,28 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <color name="WindowTitleForeground" color="#ffffff"/>
 <color name="WindowTitleBackground" color="#1006578f"/>
 <borderset name="bsWindow">
-<pixmap pos="bpTopLeft" filename="MX_HQ7/bs_tl.png"/>
-<pixmap pos="bpTop" filename="MX_HQ7/bs_t.png"/>
-<pixmap pos="bpTopRight" filename="MX_HQ7/bs_tr.png"/>
-<pixmap pos="bpLeft" filename="MX_HQ7/bs_l.png"/>
-<pixmap pos="bpRight" filename="MX_HQ7/bs_r.png"/>
-<pixmap pos="bpBottomLeft" filename="MX_HQ7/bs_bl.png"/>
-<pixmap pos="bpBottom" filename="MX_HQ7/bs_b.png"/>
-<pixmap pos="bpBottomRight" filename="MX_HQ7/bs_br.png"/>
+<pixmap pos="bpTopLeft" filename="MX_HQ7/sfteam/bs_tl.png"/>
+<pixmap pos="bpTop" filename="MX_HQ7/sfteam/bs_t.png"/>
+<pixmap pos="bpTopRight" filename="MX_HQ7/sfteam/bs_tr.png"/>
+<pixmap pos="bpLeft" filename="MX_HQ7/sfteam/bs_l.png"/>
+<pixmap pos="bpRight" filename="MX_HQ7/sfteam/bs_r.png"/>
+<pixmap pos="bpBottomLeft" filename="MX_HQ7/sfteam/bs_bl.png"/>
+<pixmap pos="bpBottom" filename="MX_HQ7/sfteam/bs_b.png"/>
+<pixmap pos="bpBottomRight" filename="MX_HQ7/sfteam/bs_br.png"/>
 </borderset>
 <borderset name="bsListboxEntry">
-<pixmap pos="bpTop" filename="MX_HQ7/h-white.png"/>
-<pixmap pos="bpBottom" filename="MX_HQ7/h-white.png"/>
+<pixmap pos="bpTop" filename="MX_HQ7/sfteam/h-white.png"/>
+<pixmap pos="bpBottom" filename="MX_HQ7/sfteam/h-white.png"/>
 </borderset>
 <!-- borderset name="bsButton">
-<pixmap pos="bpTopLeft" filename="MX_HQ7/white.png"/>
-<pixmap pos="bpTop" filename="MX_HQ7/h-white.png"/>
-<pixmap pos="bpTopRight" filename="MX_HQ7/white.png"/>
-<pixmap pos="bpLeft" filename="MX_HQ7/v-white.png"/>
-<pixmap pos="bpRight" filename="MX_HQ7/v-white.png"/>
-<pixmap pos="bpBottomLeft" filename="MX_HQ7/white.png"/>
-<pixmap pos="bpBottom" filename="MX_HQ7/h-white.png"/>
-<pixmap pos="bpBottomRight" filename="MX_HQ7/white.png"/>
+<pixmap pos="bpTopLeft" filename="MX_HQ7/sfteam/white.png"/>
+<pixmap pos="bpTop" filename="MX_HQ7/sfteam/h-white.png"/>
+<pixmap pos="bpTopRight" filename="MX_HQ7/sfteam/white.png"/>
+<pixmap pos="bpLeft" filename="MX_HQ7/sfteam/v-white.png"/>
+<pixmap pos="bpRight" filename="MX_HQ7/sfteam/v-white.png"/>
+<pixmap pos="bpBottomLeft" filename="MX_HQ7/sfteam/white.png"/>
+<pixmap pos="bpBottom" filename="MX_HQ7/sfteam/h-white.png"/>
+<pixmap pos="bpBottomRight" filename="MX_HQ7/sfteam/white.png"/>
 </borderset -->
 </windowstyle>
 <windowstyle type="skinned" id="1">
@@ -138,14 +139,14 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <color name="WindowTitleBackground" color="#000000"/>
 </windowstyle>
 <screen name="InfoBar" position="0,820" size="1920,255" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_HQ7/infobar.png"/>
+<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_HQ7/sfteam/infobar.png"/>
 <widget source="session.CurrentService" render="ChannelNumber" position="50,20" size="230,50" font="Regular;32" backgroundColor="bgmain" valign="center" halign="center" transparent="1"/>
 <eLabel text="SNR" position="925,57" size="70,30" font="Regular;24" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget source="session.FrontendStatus" render="Label" position="985,57" size="82,30" font="Regular;24" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="FrontendInfo">SNR</convert>
 </widget>
-<ePixmap pixmap="MX_HQ7/snr2_bg.png" position="905,30" size="255,22" zPosition="1" alphatest="on"/>
-<widget source="session.FrontendStatus" render="Progress" pixmap="MX_HQ7/snr2.png" position="905,30" size="255,22" zPosition="2" transparent="1">
+<ePixmap pixmap="MX_HQ7/sfteam/snr2_bg.png" position="905,30" size="255,22" zPosition="1" alphatest="on"/>
+<widget source="session.FrontendStatus" render="Progress" pixmap="MX_HQ7/sfteam/snr2.png" position="905,30" size="255,22" zPosition="2" transparent="1">
 <convert type="FrontendInfo">SNR</convert>
 </widget>
 <widget source="session.FrontendStatus" render="Progress"  borderWidth="1" borderColor="#cccccc" position="1705,101" size="150,8" zPosition="2" transparent="1">
@@ -171,34 +172,34 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <widget source="global.CurrentTime" render="Label" position="1810,34" size="85,42" font="Regular;32" valign="top" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Format::%S</convert>
 </widget>
-<ePixmap pixmap="MX_HQ7/ico_dolby_off.png" position="1200,32" size="62,44" zPosition="1" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/ico_dolby_on.png" position="1200,32" size="62,44" zPosition="2" alphatest="blend">
+<ePixmap pixmap="MX_HQ7/sfteam/ico_dolby_off.png" position="1200,32" size="62,44" zPosition="1" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sfteam/ico_dolby_on.png" position="1200,32" size="62,44" zPosition="2" alphatest="blend">
 <convert type="ServiceInfo">IsMultichannel</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap pixmap="MX_HQ7/ico_format_off.png" position="1274,32" size="62,44" zPosition="1" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/ico_format_on.png" position="1274,32" size="62,44" zPosition="2" alphatest="blend">
+<ePixmap pixmap="MX_HQ7/sfteam/ico_format_off.png" position="1274,32" size="62,44" zPosition="1" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sfteam/ico_format_on.png" position="1274,32" size="62,44" zPosition="2" alphatest="blend">
 <convert type="ServiceInfo">IsWidescreen</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap pixmap="MX_HQ7/ico_txt_off.png" position="1348,32" size="62,44" zPosition="1" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/ico_txt_on.png" position="1348,32" size="62,44" zPosition="2" alphatest="blend">
+<ePixmap pixmap="MX_HQ7/sfteam/ico_txt_off.png" position="1348,32" size="62,44" zPosition="1" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sfteam/ico_txt_on.png" position="1348,32" size="62,44" zPosition="2" alphatest="blend">
 <convert type="ServiceInfo">HasTelext</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap pixmap="MX_HQ7/ico_crypt_off.png" position="1422,32" size="62,44" zPosition="1" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/ico_crypt_on.png" position="1422,32" size="62,44" zPosition="2" alphatest="blend">
+<ePixmap pixmap="MX_HQ7/sfteam/ico_crypt_off.png" position="1422,32" size="62,44" zPosition="1" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sfteam/ico_crypt_on.png" position="1422,32" size="62,44" zPosition="2" alphatest="blend">
 <convert type="ServiceInfo">IsCrypted</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
- <ePixmap position="1496,32" size="62,44" zPosition="1" pixmap="MX_HQ7/ico_hd_off.png" alphatest="blend"/>
- <widget source="session.CurrentService" render="Pixmap" position="1496,32" size="62,44" zPosition="2" pixmap="MX_HQ7/ico_hd_on.png" alphatest="blend">
+ <ePixmap position="1496,32" size="62,44" zPosition="1" pixmap="MX_HQ7/sfteam/ico_hd_off.png" alphatest="blend"/>
+ <widget source="session.CurrentService" render="Pixmap" position="1496,32" size="62,44" zPosition="2" pixmap="MX_HQ7/sfteam/ico_hd_on.png" alphatest="blend">
  <convert type="ServiceInfo">VideoWidth</convert>
  <convert type="ValueRange">721,1980</convert>
  <convert type="ConditionalShowHide" />
  </widget>
-<ePixmap pixmap="MX_HQ7/icon_hbbtv_off.png" position="1570,32" zPosition="1" size="62,44" alphatest="blend"/>
-<widget source="HbbtvApplication" render="Pixmap" pixmap="MX_HQ7/icon_hbbtv_on.png" position="1570,32" size="62,44" zPosition="2" alphatest="blend">
+<ePixmap pixmap="MX_HQ7/sfteam/icon_hbbtv_off.png" position="1570,32" zPosition="1" size="62,44" alphatest="blend"/>
+<widget source="HbbtvApplication" render="Pixmap" pixmap="MX_HQ7/sfteam/icon_hbbtv_on.png" position="1570,32" size="62,44" zPosition="2" alphatest="blend">
 <convert type="ConditionalShowHide" />
 </widget>
 <widget source="session.CurrentService" render="Picon" position="50,71" size="220,132" zPosition="10" transparent="1" alphatest="blend">
@@ -220,8 +221,8 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <convert type="EventTime">Remaining</convert>
 <convert type="RemainingToText">InMinutes</convert>
 </widget>
-<ePixmap position="340,144" zPosition="1" size="1308,8" pixmap="MX_HQ7/sliderosd2_bg.png"/>
-<widget source="session.Event_Now" render="Progress" pixmap="MX_HQ7/sliderosd2.png" position="340,144" size="1308,8" zPosition="2" transparent="1">
+<ePixmap position="340,144" zPosition="1" size="1308,8" pixmap="MX_HQ7/sfteam/sliderosd2_bg.png"/>
+<widget source="session.Event_Now" render="Progress" pixmap="MX_HQ7/sfteam/sliderosd2.png" position="340,144" size="1308,8" zPosition="2" transparent="1">
 <convert type="EventTime">Progress</convert>
 </widget>
 <widget source="session.Event_Next" render="Label" position="315,156" size="120,45" halign="right" font="Regular;36" foregroundColor="grey" backgroundColor="bgosd" transparent="1">
@@ -240,12 +241,12 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <convert type="EventTime">Duration</convert>
 <convert type="ClockToText">InMinutes</convert>
 </widget>
-<ePixmap pixmap="MX_HQ7/recbg.png" position="1651,132" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sub_1.png" position="1651,132" size="30,30" zPosition="2" alphatest="blend"> 
+<ePixmap pixmap="MX_HQ7/sfteam/recbg.png" position="1651,132" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sfteam/sub_1.png" position="1651,132" size="30,30" zPosition="2" alphatest="blend"> 
 <convert type="ServiceInfo">SubservicesAvailable</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/rec_1.png" position="1651,132" size="30,30" zPosition="3" alphatest="blend"> 
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/sfteam/rec_1.png" position="1651,132" size="30,30" zPosition="3" alphatest="blend"> 
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
 <eLabel text="A" position="1060,57" zPosition="1" size="18,24" font="Regular;24" halign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
@@ -294,7 +295,7 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 </widget>
 </screen>
 <screen name="SecondInfoBar" flags="wfNoBorder" position="0,795" size="1920,325" title="InfoBarExt" backgroundColor="transparent2">
-<ePixmap position="0,0" zPosition="-1" size="1920,305" pixmap="MX_HQ7/infobar_ext.png"/>
+<ePixmap position="0,0" zPosition="-1" size="1920,305" pixmap="MX_HQ7/sfteam/infobar_ext.png"/>
 <widget source="session.CurrentService" render="Label" position="50,20" size="230,50" font="Regular;22" backgroundColor="bgmain" valign="center" halign="center" transparent="1">
 <convert type="ServiceName">Provider</convert>
 </widget>
@@ -302,8 +303,8 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <widget source="session.FrontendStatus" render="Label" position="985,57" size="82,30" font="Regular;24" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="FrontendInfo">SNR</convert>
 </widget>
-<ePixmap pixmap="MX_HQ7/snr2_bg.png" position="905,30" size="255,22" zPosition="1" alphatest="on"/>
-<widget source="session.FrontendStatus" render="Progress" pixmap="MX_HQ7/snr2.png" position="905,30" size="255,22" zPosition="2" transparent="1">
+<ePixmap pixmap="MX_HQ7/sfteam/snr2_bg.png" position="905,30" size="255,22" zPosition="1" alphatest="on"/>
+<widget source="session.FrontendStatus" render="Progress" pixmap="MX_HQ7/sfteam/snr2.png" position="905,30" size="255,22" zPosition="2" transparent="1">
 <convert type="FrontendInfo">SNR</convert>
 </widget>
 <widget source="session.FrontendStatus" render="Progress"  borderWidth="1" borderColor="#cccccc" position="1705,101" size="150,8" zPosition="2" transparent="1">
@@ -329,34 +330,34 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <widget source="global.CurrentTime" render="Label" position="1810,34" size="85,42" font="Regular;32" valign="top" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Format::%S</convert>
 </widget>
-<ePixmap pixmap="MX_HQ7/ico_dolby_off.png" position="1200,32" size="62,44" zPosition="1" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/ico_dolby_on.png" position="1200,32" size="62,44" zPosition="2" alphatest="blend">
+<ePixmap pixmap="MX_HQ7/sfteam/ico_dolby_off.png" position="1200,32" size="62,44" zPosition="1" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sfteam/ico_dolby_on.png" position="1200,32" size="62,44" zPosition="2" alphatest="blend">
 <convert type="ServiceInfo">IsMultichannel</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap pixmap="MX_HQ7/ico_format_off.png" position="1274,32" size="62,44" zPosition="1" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/ico_format_on.png" position="1274,32" size="62,44" zPosition="2" alphatest="blend">
+<ePixmap pixmap="MX_HQ7/sfteam/ico_format_off.png" position="1274,32" size="62,44" zPosition="1" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sfteam/ico_format_on.png" position="1274,32" size="62,44" zPosition="2" alphatest="blend">
 <convert type="ServiceInfo">IsWidescreen</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap pixmap="MX_HQ7/ico_txt_off.png" position="1348,32" size="62,44" zPosition="1" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/ico_txt_on.png" position="1348,32" size="62,44" zPosition="2" alphatest="blend">
+<ePixmap pixmap="MX_HQ7/sfteam/ico_txt_off.png" position="1348,32" size="62,44" zPosition="1" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sfteam/ico_txt_on.png" position="1348,32" size="62,44" zPosition="2" alphatest="blend">
 <convert type="ServiceInfo">HasTelext</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap pixmap="MX_HQ7/ico_crypt_off.png" position="1422,32" size="62,44" zPosition="1" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/ico_crypt_on.png" position="1422,32" size="62,44" zPosition="2" alphatest="blend">
+<ePixmap pixmap="MX_HQ7/sfteam/ico_crypt_off.png" position="1422,32" size="62,44" zPosition="1" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sfteam/ico_crypt_on.png" position="1422,32" size="62,44" zPosition="2" alphatest="blend">
 <convert type="ServiceInfo">IsCrypted</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
- <ePixmap position="1496,32" size="62,44" zPosition="1" pixmap="MX_HQ7/ico_hd_off.png" alphatest="blend"/>
- <widget source="session.CurrentService" render="Pixmap" position="1496,32" size="62,44" zPosition="2" pixmap="MX_HQ7/ico_hd_on.png" alphatest="blend">
+ <ePixmap position="1496,32" size="62,44" zPosition="1" pixmap="MX_HQ7/sfteam/ico_hd_off.png" alphatest="blend"/>
+ <widget source="session.CurrentService" render="Pixmap" position="1496,32" size="62,44" zPosition="2" pixmap="MX_HQ7/sfteam/ico_hd_on.png" alphatest="blend">
  <convert type="ServiceInfo">VideoWidth</convert>
  <convert type="ValueRange">721,1980</convert>
  <convert type="ConditionalShowHide" />
  </widget>
-<ePixmap pixmap="MX_HQ7/icon_hbbtv_off.png" position="1570,32" zPosition="1" size="62,44" alphatest="blend"/>
-<widget source="HbbtvApplication" render="Pixmap" pixmap="MX_HQ7/icon_hbbtv_on.png" position="1570,32" size="62,44" zPosition="2" alphatest="blend">
+<ePixmap pixmap="MX_HQ7/sfteam/icon_hbbtv_off.png" position="1570,32" zPosition="1" size="62,44" alphatest="blend"/>
+<widget source="HbbtvApplication" render="Pixmap" pixmap="MX_HQ7/sfteam/icon_hbbtv_on.png" position="1570,32" size="62,44" zPosition="2" alphatest="blend">
 <convert type="ConditionalShowHide" />
 </widget>
 <widget source="session.CurrentService" render="Picon" position="50,71" size="220,132" zPosition="10" transparent="1" alphatest="blend">
@@ -378,8 +379,8 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <convert type="EventTime">Remaining</convert>
 <convert type="RemainingToText">InMinutes</convert>
 </widget>
-<ePixmap position="340,144" zPosition="1" size="1308,8" pixmap="MX_HQ7/sliderosd2_bg.png"/>
-<widget source="session.Event_Now" render="Progress" pixmap="MX_HQ7/sliderosd2.png" position="340,144" size="1308,8" zPosition="2" transparent="1">
+<ePixmap position="340,144" zPosition="1" size="1308,8" pixmap="MX_HQ7/sfteam/sliderosd2_bg.png"/>
+<widget source="session.Event_Now" render="Progress" pixmap="MX_HQ7/sfteam/sliderosd2.png" position="340,144" size="1308,8" zPosition="2" transparent="1">
 <convert type="EventTime">Progress</convert>
 </widget>
 <widget source="session.Event_Next" render="Label" position="315,156" size="120,45" halign="right" font="Regular;36" foregroundColor="grey" backgroundColor="bgosd" transparent="1">
@@ -398,12 +399,12 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <convert type="EventTime">Duration</convert>
 <convert type="ClockToText">InMinutes</convert>
 </widget>
-<ePixmap pixmap="MX_HQ7/recbg.png" position="1651,132" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sub_1.png" position="1651,132" size="30,30" zPosition="2" alphatest="blend"> 
+<ePixmap pixmap="MX_HQ7/sfteam/recbg.png" position="1651,132" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sfteam/sub_1.png" position="1651,132" size="30,30" zPosition="2" alphatest="blend"> 
 <convert type="ServiceInfo">SubservicesAvailable</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/rec_1.png" position="1651,132" size="30,30" zPosition="3" alphatest="blend"> 
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/sfteam/rec_1.png" position="1651,132" size="30,30" zPosition="3" alphatest="blend"> 
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
 <eLabel text="A" position="1060,57" zPosition="1" size="18,24" font="Regular;24" halign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
@@ -500,8 +501,8 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/aboutt.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="Skin MX HQ7" position="495,10" size="300,40" font="Regular;34" halign="right" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<eLabel text="OpenPli" position="20,10" size="300,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<eLabel text="Skin SF.FullHD" position="495,10" size="300,40" font="Regular;34" halign="right" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<eLabel text="SFteam Oficial" position="20,10" size="300,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 <widget name="AboutScrollLabel" font="Regular;22" position="20,70" size="800,560" zPosition="2" split="1" dividechar=":" colposition="0"/>
 <ePixmap pixmap="MX_HQ7/buttons/red48x48.png" position="30,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
@@ -519,11 +520,11 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 </widget>
 </screen>
 <screen name="Volume" position="682,75" zPosition="1" size="555,52" title="Volume" flags="wfNoBorder">
-<ePixmap pixmap="MX_HQ7/vol_back.png" position="0,0" size="555,52" />
+<ePixmap pixmap="MX_HQ7/sfteam/vol_back.png" position="0,0" size="555,52" />
 <widget name="Volume" position="60,19" zPosition="1" size="450,14" transparent="1"/>
 </screen>
 <screen name="Mute" position="100,75"  size="82,75" title="Mute" backgroundColor="transparent2" zPosition="10" flags="wfNoBorder">
-<ePixmap pixmap="MX_HQ7/muteback.png" position="1,1" size="82,75" zPosition="-5" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ7/sfteam/muteback.png" position="1,1" size="82,75" zPosition="-5" alphatest="blend"/>
 </screen>
 <screen name="menu_mainmenu" position="center,225" size="1300,720" title="Main Menu">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
@@ -531,7 +532,7 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x55.png" selectionPixmap="MX_HQ7/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
 <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (20, 7), size = (645, 40), flags = RT_HALIGN_LEFT, text =0) ],
@@ -553,7 +554,7 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
  <widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x55.png" selectionPixmap="MX_HQ7/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
 <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (20, 7), size = (645, 40), flags = RT_HALIGN_LEFT, text =0) ],
@@ -575,7 +576,7 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x55.png" selectionPixmap="MX_HQ7/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
 <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (20, 7), size = (645, 40), flags = RT_HALIGN_LEFT, text =0) ],
@@ -597,8 +598,7 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
-<widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x55.png" selectionPixmap="MX_HQ7/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/><widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x55.png" selectionPixmap="MX_HQ7/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
 <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (20, 7), size = (645, 40), flags = RT_HALIGN_LEFT, text =0) ],
 "fonts": [gFont("Regular",34)],
@@ -619,7 +619,7 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x55.png" selectionPixmap="MX_HQ7/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
 <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (20, 7), size = (645, 40), flags = RT_HALIGN_LEFT, text =0) ],
@@ -641,7 +641,7 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x55.png" selectionPixmap="MX_HQ7/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
 <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (20, 7), size = (645, 40), flags = RT_HALIGN_LEFT, text =0) ],
@@ -663,7 +663,7 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget source="menu" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x55.png" selectionPixmap="MX_HQ7/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
 <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (20, 7), size = (645, 40), flags = RT_HALIGN_LEFT, text =0) ],
@@ -685,7 +685,7 @@ THIS SKIN GRAPHICS IS COPYRIGHT PROTECTED
 <ePixmap pixmap="MX_HQ7/menu/audioo.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="config" position="85,20" size="755,160" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget source="key_red" render="Pixmap" pixmap="MX_HQ7/buttons/key_red.png" position="25,25" size="35,25" alphatest="blend">
 <convert type="ConditionalShowHide" />
@@ -735,7 +735,7 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
 <ePixmap pixmap="MX_HQ7/menu/sellist.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="menu" position="20,20" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -767,7 +767,7 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
 <convert type="EventTime">EndTime</convert>
 <convert type="ClockToText">Format:%H:%M</convert>
 </widget>
-<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
+<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/sfteam/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
 </widget>
 <widget source="session.Event_Now" render="Label" position="1228,220" zPosition="1" size="528,547" font="Regular;28"  foregroundColor="button" backgroundColor="bgbutton" transparent="1">
@@ -780,7 +780,7 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
 <eLabel position="1220,195" size="540,600" zPosition="-1" backgroundColor="bgbutton"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,810" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="840,812" size="600,450" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <ePixmap pixmap="MX_HQ7/menu/exit.png" position="1692,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/ok.png" position="1332,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/menubutton.png" position="1452,810" size="48,48" alphatest="blend"/>
@@ -803,7 +803,7 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
 <widget alphatest="blend" position="1220,50" render="Picon" size="100,78" source="Service" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
-<widget source="ServiceEvent" render="Progress" position="1220,155" size="100,22"  zPosition="1" pixmap="MX_HQ7/progress.png" borderWidth="1" borderColor="#cccccc">
+<widget source="ServiceEvent" render="Progress" position="1220,155" size="100,22"  zPosition="1" pixmap="MX_HQ7/sfteam/progress.png" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
 </widget>
 <widget source="ServiceEvent" render="Label" position="1228,203" zPosition="1" size="528,485" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
@@ -839,8 +839,8 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
 <widget source="global.CurrentTime" render="Label" position="1345,25" size="195,40" font="Regular;36" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ClockToText">Format:%d.%m.%Y</convert>
 </widget>
-<ePixmap pixmap="MX_HQ7/recbg2.png" position="1555,138" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/rec_1.png" position="1555,138" size="30,30" zPosition="3" alphatest="blend"> 
+<ePixmap pixmap="MX_HQ7/sfteam/recbg2.png" position="1555,138" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/sfteam/rec_1.png" position="1555,138" size="30,30" zPosition="3" alphatest="blend"> 
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
 <widget source="session.Event_Now" render="Label" position="265,100" size="97,35" halign="right" font="Regular;32" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
@@ -859,8 +859,8 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
 <convert type="EventTime">Remaining</convert>
 <convert type="RemainingToText">InMinutes</convert>
 </widget>
-<ePixmap position="284,149" zPosition="1" size="1255,8" pixmap="MX_HQ7/sliderosdr_bg.png"/>
-<widget source="session.Event_Now" render="Progress" pixmap="MX_HQ7/sliderosdr.png" position="284,149" size="1255,8" zPosition="2" transparent="1">
+<ePixmap position="284,149" zPosition="1" size="1255,8" pixmap="MX_HQ7/sfteam/sliderosdr_bg.png"/>
+<widget source="session.Event_Now" render="Progress" pixmap="MX_HQ7/sfteam/sliderosdr.png" position="284,149" size="1255,8" zPosition="2" transparent="1">
 <convert type="EventTime">Progress</convert>
 </widget>
 <widget source="session.Event_Next" render="Label" position="265,169" size="97,35" halign="right" font="Regular;32" foregroundColor="grey" backgroundColor="bgbutton" transparent="1">
@@ -922,7 +922,7 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/(count &gt; 7 and 2 or 
 <screen name="Console" position="center,225" size="1300,720" title="Command execution...">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
 <widget name="text" position="20,30" size="1260,605" zPosition="2" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/>
 </screen>
@@ -954,7 +954,7 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/(count &gt; 7 and 2 or 
 </screen>
 <screen name="DefaultWizard" position="center,225" size="1300,720" title="Welcome...">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
-<widget name="wizard" pixmap="MX_HQ7/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
+<widget name="wizard" pixmap="MX_HQ7/sfteam/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
@@ -965,14 +965,14 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/(count &gt; 7 and 2 or 
 <widget source="list" render="Listbox" position="20,280" size="820,320" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40a.png" transparent="1">
 <convert type="StringList"/>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_HQ7/rc.png" zPosition="10" alphatest="on"/>
-<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowdown.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="skin_default/rc.png" zPosition="10" alphatest="on"/>
+<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
 </screen>
 <screen name="VideoWizard" position="center,225" size="1300,720" title="Welcome...">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
-<widget name="wizard" pixmap="MX_HQ7/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
+<widget name="wizard" pixmap="MX_HQ7/sfteam/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
@@ -983,14 +983,14 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/(count &gt; 7 and 2 or 
 <widget source="list" render="Listbox" position="20,280" size="820,320" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40a.png" transparent="1">
 <convert type="StringList"/>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_HQ7/rc.png" zPosition="10" alphatest="on"/>
-<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowdown.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="skin_default/rc.png" zPosition="10" alphatest="on"/>
+<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
 </screen>
 <screen name="StartWizard" position="center,225" size="1300,720" title="Welcome...">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
-<widget name="wizard" pixmap="MX_HQ7/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
+<widget name="wizard" pixmap="MX_HQ7/sfteam/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
@@ -1001,14 +1001,14 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/(count &gt; 7 and 2 or 
 <widget source="list" render="Listbox" position="20,280" size="820,320" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40a.png" transparent="1">
 <convert type="StringList"/>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_HQ7/rc.png" zPosition="10" alphatest="on"/>
-<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowdown.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="skin_default/rc.png" zPosition="10" alphatest="on"/>
+<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
 </screen>
 <screen name="DreamPackageWizard" position="center,225" size="1300,720" title="Welcome...">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
-<widget name="wizard" pixmap="MX_HQ7/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
+<widget name="wizard" pixmap="MX_HQ7/sfteam/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
@@ -1019,14 +1019,14 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/(count &gt; 7 and 2 or 
 <widget source="list" render="Listbox" position="20,280" size="820,320" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40a.png" transparent="1">
 <convert type="StringList"/>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_HQ7/rc.png" zPosition="10" alphatest="on"/>
-<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowdown.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="skin_default/rc.png" zPosition="10" alphatest="on"/>
+<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
 </screen>
 <screen name="NetworkWizard" position="center,225" size="1300,720" title="Welcome...">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
-<widget name="wizard" pixmap="MX_HQ7/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
+<widget name="wizard" pixmap="MX_HQ7/sfteam/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
@@ -1037,14 +1037,14 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/(count &gt; 7 and 2 or 
 <widget source="list" render="Listbox" position="20,280" size="820,320" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40a.png" transparent="1">
 <convert type="StringList"/>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_HQ7/rc.png" zPosition="10" alphatest="on"/>
-<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowdown.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="skin_default/rc.png" zPosition="10" alphatest="on"/>
+<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
 </screen>
 <screen name="ImageWizard" position="center,225" size="1300,720" title="Welcome...">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
-<widget name="wizard" pixmap="MX_HQ7/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
+<widget name="wizard" pixmap="MX_HQ7/sfteam/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
@@ -1055,10 +1055,10 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/(count &gt; 7 and 2 or 
 <widget source="list" render="Listbox" position="20,280" size="820,320" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40a.png" transparent="1">
 <convert type="StringList"/>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_HQ7/rc.png" zPosition="10" alphatest="on"/>
-<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowdown.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="skin_default/rc.png" zPosition="10" alphatest="on"/>
+<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
 </screen>
 <screen name="TutorialWizard" position="center,225" size="1300,720" title="Welcome...">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
@@ -1068,15 +1068,15 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/(count &gt; 7 and 2 or 
 <ePixmap pixmap="MX_HQ7/menu/setupp.png" position="945,160" size="250,250" zPosition="5" alphatest="on"/>
 <widget name="text" position="20,20" size="820,240" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/>
 <widget name="list" position="20,280" zPosition="1" size="820,320" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40a.png" transparent="1"/>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_HQ7/rc.png" zPosition="10" alphatest="on"/>
-<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowdown.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="skin_default/rc.png" zPosition="10" alphatest="on"/>
+<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
 </screen>
 <screen name="LanguageWizard" position="center,225" size="1300,720" title="Welcome...">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
-<widget name="wizard" pixmap="MX_HQ7/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<widget name="wizard" pixmap="MX_HQ7/sfteam/wizard2.png" position="0,0" size="0,0" zPosition="5" alphatest="blend"/>
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
@@ -1092,10 +1092,10 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 }
 </convert>
 </widget>
-<widget name="rc" position="993,70" size="154,500" pixmap="MX_HQ7/rc.png" zPosition="10" alphatest="on"/>
-<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowdown.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
+<widget name="rc" position="993,70" size="154,500" pixmap="skin_default/rc.png" zPosition="10" alphatest="on"/>
+<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
 </screen>
 <screen name="EPGSelection" position="center,145" size="1780,880" title="EPG Selection">
 <ePixmap pixmap="MX_HQ7/menu/bb2.png" position="18,798" size="1744,74" zPosition="-1" alphatest="on"/>
@@ -1122,7 +1122,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <convert type="EventTime">EndTime</convert>
 <convert type="ClockToText">Format:%H:%M</convert>
 </widget>
-<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
+<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/sfteam/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
 </widget>
 <widget source="Event" render="Label" position="1228,220" zPosition="1" size="528,547" font="Regular;28"  foregroundColor="button" backgroundColor="bgbutton" transparent="1">
@@ -1158,7 +1158,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <convert type="EventTime">EndTime</convert>
 <convert type="ClockToText">Format:%H:%M</convert>
 </widget>
-<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
+<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/sfteam/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
 </widget>
 <widget source="Event" render="Label" position="1228,220" zPosition="1" size="528,547" font="Regular;28"  foregroundColor="button" backgroundColor="bgbutton" transparent="1">
@@ -1191,7 +1191,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <convert type="EventTime">EndTime</convert>
 <convert type="ClockToText">Format:%H:%M</convert>
 </widget>
-<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
+<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/sfteam/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
 </widget>
 <eLabel text="*  *  *  NEXT  *  *  *" position="1228,215" size="528,40" font="Regular;30" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
@@ -1211,12 +1211,12 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </widget>
 <widget name="timeline_text" position="20,30" size="1178,42" itemHeight="42" font="Regular;28" foregroundColor="#00e5b243" backgroundColor="bgmain" transparent="1"/>
 <widget name="list" position="20,83" size="1178,675" itemHeight="75" foregroundColor="button" backgroundColor="#03222222" ServiceBackgroundColorSelected="#0400264d" EntryBackgroundColorNow="#0400264d" EntryBackgroundColor="#03363636" EntryForegroundColorSelected="#ffffff" EntryBackgroundColorSelected="#04003b8f" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever" EventNamePadding="6" ServiceNamePadding="6" EntryBorderColor="#cccccc" ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32"  IconXPadding="6" IconYPadding="4"/>
-<widget name="timeline0" pixmap="MX_HQ7/timeline.png" position="0,83" size="2,675" zPosition="1"/>
-<widget name="timeline1" pixmap="MX_HQ7/timeline.png" position="0,83" size="2,675" zPosition="1"/>
-<widget name="timeline2" pixmap="MX_HQ7/timeline.png" position="0,83" size="2,675" zPosition="1"/>
-<widget name="timeline3" pixmap="MX_HQ7/timeline.png" position="0,83" size="2,675" zPosition="1"/>
-<widget name="timeline4" pixmap="MX_HQ7/timeline.png" position="0,83" size="2,675" zPosition="1"/>
-<widget name="timeline5" pixmap="MX_HQ7/timeline.png" position="0,83" size="2,675" zPosition="1"/>
+<widget name="timeline0" pixmap="MX_HQ7/sfteam/timeline.png" position="0,83" size="2,675" zPosition="1"/>
+<widget name="timeline1" pixmap="MX_HQ7/sfteam/timeline.png" position="0,83" size="2,675" zPosition="1"/>
+<widget name="timeline2" pixmap="MX_HQ7/sfteam/timeline.png" position="0,83" size="2,675" zPosition="1"/>
+<widget name="timeline3" pixmap="MX_HQ7/sfteam/timeline.png" position="0,83" size="2,675" zPosition="1"/>
+<widget name="timeline4" pixmap="MX_HQ7/sfteam/timeline.png" position="0,83" size="2,675" zPosition="1"/>
+<widget name="timeline5" pixmap="MX_HQ7/sfteam/timeline.png" position="0,83" size="2,675" zPosition="1"/>
 <widget name="timeline_now" pixmap="MX_HQ7/timeline-now.png" position="6,73" size="15,695" zPosition="2" alphatest="blend"/>
 <eLabel position="0,790" size="1780,3" zPosition="-1" backgroundColor="#272727"/>
 <eLabel position="1200,0" size="3,790" zPosition="1" backgroundColor="#272727"/>
@@ -1236,7 +1236,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <convert type="EventTime">EndTime</convert>
 <convert type="ClockToText">Format:%H:%M</convert>
 </widget>
-<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
+<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/sfteam/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
 </widget>
 <widget source="Event" render="Label" position="1228,220" zPosition="1" size="528,547" font="Regular;28"  foregroundColor="button" backgroundColor="bgbutton" transparent="1">
@@ -1252,13 +1252,13 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </widget>
 <widget name="timeline_text" position="20,30" size="1178,42" font="Regular;28" itemHeight="42" foregroundColor="#00e5b243" backgroundColor="bgmain" transparent="1"/>
 <widget name="list" position="20,83" size="1178,700" itemHeight="50" foregroundColor="button" backgroundColor="#03222222" ServiceBackgroundColorSelected="#0400264d" EntryBackgroundColorNow="#0400264d" EntryBackgroundColor="#03363636" EntryForegroundColorSelected="#ffffff" EntryBackgroundColorSelected="#04003b8f" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"   EventFontPadding="4" EventNamePadding="4" ServiceBorderVerWidth="2" EventBorderVerWidth="2" EntryBorderColor="#cccccc" />
-<widget name="timeline0" pixmap="MX_HQ7/timeline.png" position="0,83" size="2,700" zPosition="1"/>
-<widget name="timeline1" pixmap="MX_HQ7/timeline.png" position="0,83" size="2,700" zPosition="1"/>
-<widget name="timeline2" pixmap="MX_HQ7/timeline.png" position="0,83" size="2,700" zPosition="1"/>
-<widget name="timeline3" pixmap="MX_HQ7/timeline.png" position="0,83" size="2,700" zPosition="1"/>
-<widget name="timeline4" pixmap="MX_HQ7/timeline.png" position="0,83" size="2,700" zPosition="1"/>
-<widget name="timeline5" pixmap="MX_HQ7/timeline.png" position="0,83" size="2,700" zPosition="1"/>
-<widget name="timeline_now" pixmap="MX_HQ7/timeline-now2.png" position="6,73" size="15,720" zPosition="2" alphatest="blend"/>
+<widget name="timeline0" pixmap="MX_HQ7/sfteam/timeline.png" position="0,83" size="2,700" zPosition="1"/>
+<widget name="timeline1" pixmap="MX_HQ7/sfteam/timeline.png" position="0,83" size="2,700" zPosition="1"/>
+<widget name="timeline2" pixmap="MX_HQ7/sfteam/timeline.png" position="0,83" size="2,700" zPosition="1"/>
+<widget name="timeline3" pixmap="MX_HQ7/sfteam/timeline.png" position="0,83" size="2,700" zPosition="1"/>
+<widget name="timeline4" pixmap="MX_HQ7/sfteam/timeline.png" position="0,83" size="2,700" zPosition="1"/>
+<widget name="timeline5" pixmap="MX_HQ7/sfteam/timeline.png" position="0,83" size="2,700" zPosition="1"/>
+<widget name="timeline_now" pixmap="MX_HQ7/sfteam/timeline-now2.png" position="6,73" size="15,720" zPosition="2" alphatest="blend"/>
 <eLabel position="0,790" size="1780,3" zPosition="-1" backgroundColor="#272727"/>
 <eLabel position="1200,0" size="3,790" zPosition="1" backgroundColor="#272727"/>
 <ePixmap pixmap="MX_HQ7/buttons/red48x48.png" position="40,810" size="48,48" alphatest="blend"/>
@@ -1277,7 +1277,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <convert type="EventTime">EndTime</convert>
 <convert type="ClockToText">Format:%H:%M</convert>
 </widget>
-<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
+<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/sfteam/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
 </widget>
 <widget source="Event" render="Label" position="1228,220" zPosition="1" size="528,547" font="Regular;28"  foregroundColor="button" backgroundColor="bgbutton" transparent="1">
@@ -1323,7 +1323,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <convert type="EventTime">EndTime</convert>
 <convert type="ClockToText">Format:%H:%M</convert>
 </widget>
-<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
+<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/sfteam/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
 </widget>
 <widget source="session.Event_Now" render="Label" position="1228,220" zPosition="1" size="528,547" font="Regular;28"  foregroundColor="button" backgroundColor="bgbutton" transparent="1">
@@ -1407,7 +1407,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <convert type="EventTime">EndTime</convert>
 <convert type="ClockToText">Format:%H:%M</convert>
 </widget>
-<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
+<widget source="session.Event_Now" render="Progress" position="1315,155" zPosition="1" pixmap="MX_HQ7/sfteam/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
 <convert type="EventTime">Progress</convert>
 </widget>
 <widget source="session.Event_Now" render="Label" position="1228,220" zPosition="1" size="528,547" font="Regular;28"  foregroundColor="button" backgroundColor="bgbutton" transparent="1">
@@ -1423,7 +1423,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="menu" render="Listbox" position="20,20" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1">
 <convert type="StringList"/>
 </widget>
@@ -1436,11 +1436,11 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </screen>
 <screen name="HarddiskSelection" position="center,225" size="1300,720" title="Select HDD">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="hddlist" position="20,20" size="820,600" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -1451,7 +1451,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 </screen>
 <screen name="HarddiskSetup" position="center,225" size="1300,720" title="Harddisk">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
@@ -1471,7 +1471,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/hddd.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="wait" position="15,15" size="870,180" font="Regular;30" foregroundColor="button" backgroundColor="bgmain"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -1485,14 +1485,14 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="list" position="20,20" size="820,612" zPosition="2" font="Regular;28" itemHeight="36" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x32.png" selectionPixmap="MX_HQ7/menu/button820x32.png" transparent="1"/>
 <widget name="long_key" position="993,585" size="142,35" font="Regular;30" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
-<widget name="rc" position="993,70" size="142,500" pixmap="MX_HQ7/rc.png" zPosition="10" alphatest="on"/>
-<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowdown.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowdown.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
-<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/arrowup.png" zPosition="11" alphatest="blend"/>
+<widget name="rc" position="993,70" size="142,500" pixmap="skin_default/rc.png" zPosition="10" alphatest="on"/>
+<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
+<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MX_HQ7/sfteam/arrowdown.png" zPosition="11" alphatest="blend"/>
 </screen>
 <screen name="LanguageSelection" position="center,225" size="1300,720" title="Language selection">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
@@ -1500,7 +1500,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="languages" render="Listbox" enableWrapAround="1" position="20,20" size="820,605" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x55.png" selectionPixmap="MX_HQ7/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
 <convert type="TemplatedMultiContent">
 {"template": [
@@ -1549,10 +1549,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</applet>
 </screen>
 <screen name="MoviePlayer" position="0,825" size="1920,255" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_HQ7/moviebar.png"/>
-<ePixmap position="100,98" size="150,100" zPosition="10" pixmap="MX_HQ7/movie.png" alphatest="blend"/>
-<ePixmap position="95,39" size="180,32" zPosition="10" pixmap="MX_HQ7/ster.png" alphatest="blend"/>
-<ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="MX_HQ7/camera.png" alphatest="blend"/>
+<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_HQ7/sfteam/moviebar.png"/>
+<ePixmap position="100,98" size="150,100" zPosition="10" pixmap="MX_HQ7/sfteam/movie.png" alphatest="blend"/>
+<ePixmap position="95,39" size="180,32" zPosition="10" pixmap="MX_HQ7/sfteam/ster.png" alphatest="blend"/>
+<ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="MX_HQ7/sfteam/camera.png" alphatest="blend"/>
 <widget source="global.CurrentTime" render="Label" position="1650,30" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
@@ -1565,18 +1565,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget source="session.CurrentService" render="Label" position="325,35" size="1130,50" font="Regular;38" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
-<ePixmap position="1466,34" size="62,44" zPosition="1" pixmap="MX_HQ7/ico_dolby_off.png" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" position="1466,34" size="62,44" zPosition="2" pixmap="MX_HQ7/ico_dolby_on.png" alphatest="blend">
+<ePixmap position="1466,34" size="62,44" zPosition="1" pixmap="MX_HQ7/sfteam/ico_dolby_off.png" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" position="1466,34" size="62,44" zPosition="2" pixmap="MX_HQ7/sfteam/ico_dolby_on.png" alphatest="blend">
 <convert type="ServiceInfo">IsMultichannel</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
 <ePixmap pixmap="MX_HQ7/ico_format_off.png" position="1545,34" zPosition="1" size="62,44" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/ico_format_on.png" position="1545,34" size="62,44" zPosition="2" alphatest="blend">
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sfteam/ico_format_on.png" position="1545,34" size="62,44" zPosition="2" alphatest="blend">
 <convert type="ServiceInfo">IsWidescreen</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap pixmap="MX_HQ7/recbg.png" position="1636,131" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/rec_1.png" position="1636,131" size="30,30" zPosition="2" alphatest="blend"> 
+<ePixmap pixmap="MX_HQ7/sfteam/recbg.png" position="1636,131" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/sfteam/rec_1.png" position="1636,131" size="30,30" zPosition="2" alphatest="blend"> 
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
 <widget source="session.CurrentService" render="Label" font="Regular;28" position="302,162" size="87,36" halign="right"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
@@ -1586,8 +1586,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget source="session.CurrentService" render="Label" font="Regular;28" position="413,162" size="87,36" halign="left"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
 <convert type="ServiceInfo">VideoHeight</convert>
 </widget>
-<ePixmap position="328,143" zPosition="1" size="1280,8" pixmap="MX_HQ7/slidermovie_bg.png"/>
-<widget source="session.CurrentService" render="Progress" pixmap="MX_HQ7/slidermovie.png" position="328,143" size="1280,8" zPosition="2" transparent="1">
+<ePixmap position="328,143" zPosition="1" size="1280,8" pixmap="MX_HQ7/sfteam/slidermovie_bg.png"/>
+<widget source="session.CurrentService" render="Progress" pixmap="MX_HQ7/sfteam/slidermovie.png" position="328,143" size="1280,8" zPosition="2" transparent="1">
 <convert type="ServicePosition">Position</convert>
 </widget>
 <widget source="session.CurrentService" render="PositionGauge"	position="326,138" size="1273,20" zPosition="2" transparent="1" >
@@ -1602,14 +1602,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget source="session.CurrentService" render="Label" position="1435,98" size="180,40" font="Regular;32" halign="right"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
 <convert type="ServicePosition">Remaining</convert>
 </widget>
-<ePixmap position="900,166" zPosition="1" size="150,25" pixmap="MX_HQ7/mp_buttons.png" alphatest="blend"/>
+<ePixmap position="900,166" zPosition="1" size="150,25" pixmap="MX_HQ7/sfteam/mp_buttons.png" alphatest="blend"/>
 </screen>
 <screen name="MovieContextMenu" position="center,225" size="1300,720" title="Movielist menu">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="menu" position="20,20" size="1260,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg1260x40.png" selectionPixmap="MX_HQ7/menu/button1260x40.png" transparent="1"/>
 </screen>
 <screen name="RecordPathsSettings" position="center,225" size="1300,720" title="Recording paths">
@@ -1670,7 +1670,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget source="session.CurrentService" render="Label" position="1657,150" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ServicePosition">Length</convert>
 </widget>
-<widget source="session.CurrentService" render="Progress" position="1335,155" zPosition="1" pixmap="MX_HQ7/progress.png" size="310,22" borderWidth="1" borderColor="#cccccc">
+<widget source="session.CurrentService" render="Progress" position="1335,155" zPosition="1" pixmap="MX_HQ7/sfteam/progress.png" size="310,22" borderWidth="1" borderColor="#cccccc">
 <convert type="ServicePosition">Position</convert>
 </widget>
 <widget source="Service" render="Label" position="1228,220" zPosition="1" size="528,547" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
@@ -1690,7 +1690,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="config" position="20,20" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -1705,7 +1705,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="servicelist" position="20,20" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -1720,7 +1720,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="config" position="20,20" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -1751,7 +1751,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/greenp.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <widget name="text" position="20,20" size="780,675" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
@@ -1769,7 +1769,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget source="nimlist" render="Listbox" position="20,20" size="820,600" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x150.png" selectionPixmap="MX_HQ7/menu/button820x150.png" transparent="1">
 <convert type="TemplatedMultiContent">
 {"template": [
@@ -1794,7 +1794,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="config" position="20,20" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -1806,7 +1806,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <eLabel name="snr" text="SNR:" position="35,22" size="90,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget source="Frontend" render="Progress" position="170,22" size="420,30" pixmap="MX_HQ7/bar_snr.png" borderWidth="2" borderColor="#cccccc">
 <convert type="FrontendInfo">SNR</convert>
@@ -1881,7 +1881,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="config" position="20,20" size="820,560" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x35.png" selectionPixmap="MX_HQ7/menu/button820x35.png" transparent="1"/>
 <widget name="introduction" position="20,590" size="820,40" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
@@ -1900,7 +1900,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="header" position="20,20" size="820,35" font="Regular;30" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="footer" position="20,590" size="820,35" font="Regular;30" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 <widget name="config" position="20,80" size="820,455" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x35.png" selectionPixmap="MX_HQ7/menu/button820x35.png" transparent="1"/>
@@ -1973,7 +1973,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="current_status" position="80,77" size="600,35" font="Regular;30" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="red" pixmap="MX_HQ7/buttons/key_red2.png" position="30,167" size="35,25" alphatest="blend"/>
 <widget name="green" pixmap="MX_HQ7/buttons/key_green2.png" position="30,227" size="35,25" alphatest="blend"/>
@@ -2009,7 +2009,7 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 <ePixmap pixmap="MX_HQ7/menu/epglist.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="config" position="20,20" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -2054,7 +2054,7 @@ MultiContentEntryText(pos=(210,0), size=(205, 30), text = 2, flags = RT_HALIGN_R
 <widget source="session.CurrentService" render="Label" position="203,605" size="894,35" zPosition="3" font="Regular;28" halign="center" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ServicePosition">Position,Detailed</convert>
 </widget>
-<ePixmap pixmap="MX_HQ7/mp_buttons.png" position="40,665" size="225,33" zPosition="1" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ7/sfteam/mp_buttons.png" position="40,665" size="225,33" zPosition="1" alphatest="blend"/>
 <widget name="Timeline" position="208,660" size="884,30" zPosition="10" backgroundColor="#174c90" pointer="MX_HQ7/position_arrow.png:2,7" foregroundColor="black"/>
 <eLabel text="OK = Menu" position="1050,660" size="210,35" zPosition="1" font="Regular;28" halign="right" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
@@ -2078,8 +2078,8 @@ MultiContentEntryText(pos=(210,0), size=(205, 30), text = 2, flags = RT_HALIGN_R
 <widget name="year" position="565,725" size="870,35" font="Regular;28" valign="top" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="coverArt" pixmap="MX_HQ7/no_coverArt.png" position="110,590" size="180,180" transparent="1" alphatest="blend"/>
 <widget name="repeat" position="1660,717" size="50,30" pixmaps="MX_HQ7/icons/repeat_off.png,MX_HQ7/icons/repeat_on.png" transparent="1" alphatest="blend"/>
-<ePixmap position="460,818" size="900,33" pixmap="MX_HQ7/mpslider.png" zPosition="3" alphatest="blend"/>
-<widget name="PositionGauge" position="493,824" size="834,21" zPosition="4" pointer="MX_HQ7/pointer.png:19,6" backgroundColor="black"/>
+<ePixmap position="460,818" size="900,33" pixmap="MX_HQ7/sfteam/mpslider.png" zPosition="3" alphatest="blend"/>
+<widget name="PositionGauge" position="493,824" size="834,21" zPosition="4" pointer="MX_HQ7/sfteam/pointer.png:19,6" backgroundColor="black"/>
 <widget source="session.CurrentService" render="Label" position="272,812" size="165,42" font="Regular;32" halign="right" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1">
 <convert type="ServicePosition">Position</convert>
 </widget>
@@ -2089,7 +2089,7 @@ MultiContentEntryText(pos=(210,0), size=(205, 30), text = 2, flags = RT_HALIGN_R
 <widget source="session.CurrentService" render="Label" position="1382,812" size="165,45" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1">
 <convert type="ServicePosition">Remaining</convert>
 </widget>
-<ePixmap position="40,825" zPosition="1" size="390,48" pixmap="MX_HQ7/mp_buttons.png" alphatest="blend"/>
+<ePixmap position="40,825" zPosition="1" size="390,48" pixmap="MX_HQ7/sfteam/mp_buttons.png" alphatest="blend"/>
 <eLabel name="nowPlaying" position="0,0" size="0,0"/>
 <widget name="genretext" position="0,0" size="0,0"/>
 <widget name="genre" position="0,0" size="0,0"/>
@@ -2442,7 +2442,7 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <ePixmap pixmap="MX_HQ7/menu/softwaree.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <widget name="activityslider" position="20,20" size="820,10"/>
 <widget name="slider" position="20,245" size="820,45"/>
@@ -2480,10 +2480,10 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 
 </widget>
 </screen>
 <screen name="DVDPlayer" position="0,825" size="1920,255" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_HQ7/moviebar.png"/>
-<ePixmap position="100,98" size="150,100" zPosition="10" pixmap="MX_HQ7/movie.png" alphatest="blend"/>
-<ePixmap position="95,39" size="180,32" zPosition="10" pixmap="MX_HQ7/ster.png" alphatest="blend"/>
-<ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="MX_HQ7/camera.png" alphatest="blend"/>
+<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_HQ7/sfteam/moviebar.png"/>
+<ePixmap position="100,98" size="150,100" zPosition="10" pixmap="MX_HQ7/sfteam/movie.png" alphatest="blend"/>
+<ePixmap position="95,39" size="180,32" zPosition="10" pixmap="MX_HQ7/sfteam/ster.png" alphatest="blend"/>
+<ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="MX_HQ7/sfteam/camera.png" alphatest="blend"/>
 <widget source="global.CurrentTime" render="Label" position="1650,30" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
@@ -2496,17 +2496,17 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 
 <widget source="session.CurrentService" render="Label" position="325,35" size="1130,50" font="Regular;38" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
-<ePixmap position="1545,34" size="62,44" zPosition="1" pixmap="MX_HQ7/ico_dolby_off.png" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" position="1545,34" size="62,44" zPosition="2" pixmap="MX_HQ7/ico_dolby_on.png" alphatest="blend">
+<ePixmap position="1545,34" size="62,44" zPosition="1" pixmap="MX_HQ7/sfteam/ico_dolby_off.png" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" position="1545,34" size="62,44" zPosition="2" pixmap="MX_HQ7/sfteam/ico_dolby_on.png" alphatest="blend">
 <convert type="ServiceInfo">IsMultichannel</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap pixmap="MX_HQ7/recbg.png" position="1636,131" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/rec_1.png" position="1636,131" size="30,30" zPosition="2" alphatest="blend"> 
+<ePixmap pixmap="MX_HQ7/sfteam/recbg.png" position="1636,131" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/sfteam/rec_1.png" position="1636,131" size="30,30" zPosition="2" alphatest="blend"> 
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
-<ePixmap position="328,143" zPosition="1" size="1280,8" pixmap="MX_HQ7/slidermovie_bg.png"/>
-<widget source="session.CurrentService" render="Progress" pixmap="MX_HQ7/slidermovie.png" position="328,143" size="1280,8" zPosition="2" transparent="1">
+<ePixmap position="328,143" zPosition="1" size="1280,8" pixmap="MX_HQ7/sfteam/slidermovie_bg.png"/>
+<widget source="session.CurrentService" render="Progress" pixmap="MX_HQ7/sfteam/slidermovie.png" position="328,143" size="1280,8" zPosition="2" transparent="1">
 <convert type="ServicePosition">Position</convert>
 </widget>
 <widget source="session.CurrentService" render="PositionGauge"	position="326,138" size="1273,20" zPosition="2" transparent="1" >
@@ -2524,13 +2524,13 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 
 <widget name="chapterLabel" position="1215,40" size="90,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="audioLabel" position="1305,35" size="90,35" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="subtitleLabel" position="1395,35" size="90,35" font="Regular;20" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
-<ePixmap position="900,166" zPosition="1" size="150,25" pixmap="MX_HQ7/mp_buttons.png" alphatest="blend"/>
+<ePixmap position="900,166" zPosition="1" size="150,25" pixmap="MX_HQ7/sfteam/mp_buttons.png" alphatest="blend"/>
 </screen>
 <screen name="MyTubePlayer" position="0,825" size="1920,255" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_HQ7/moviebar.png"/>
-<ePixmap position="100,98" size="150,100" zPosition="10" pixmap="MX_HQ7/movie.png" alphatest="blend"/>
-<ePixmap position="95,39" size="180,32" zPosition="10" pixmap="MX_HQ7/ster.png" alphatest="blend"/>
-<ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="MX_HQ7/you_tube.png" alphatest="blend"/>
+<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_HQ7/sfteam/moviebar.png"/>
+<ePixmap position="100,98" size="150,100" zPosition="10" pixmap="MX_HQ7/sfteam/movie.png" alphatest="blend"/>
+<ePixmap position="95,39" size="180,32" zPosition="10" pixmap="MX_HQ7/sfteam/ster.png" alphatest="blend"/>
+<ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="MX_HQ7/sfteam/you_tube.png" alphatest="blend"/>
 <widget source="global.CurrentTime" render="Label" position="1650,30" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
@@ -2543,12 +2543,12 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 
 <widget source="session.CurrentService" render="Label" position="325,35" size="1280,50" font="Regular;38" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
-<ePixmap pixmap="MX_HQ7/recbg.png" position="1636,131" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/rec_1.png" position="1636,131" size="30,30" zPosition="2" alphatest="blend"> 
+<ePixmap pixmap="MX_HQ7/sfteam/recbg.png" position="1636,131" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/sfteam/rec_1.png" position="1636,131" size="30,30" zPosition="2" alphatest="blend"> 
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
-<ePixmap position="328,143" zPosition="1" size="1280,8" pixmap="MX_HQ7/slidermovie_bg.png"/>
-<widget source="session.CurrentService" render="Progress" pixmap="MX_HQ7/slidermovie.png" position="328,143" size="1280,8" zPosition="2" transparent="1">
+<ePixmap position="328,143" zPosition="1" size="1280,8" pixmap="MX_HQ7/sfteam/slidermovie_bg.png"/>
+<widget source="session.CurrentService" render="Progress" pixmap="MX_HQ7/sfteam/slidermovie.png" position="328,143" size="1280,8" zPosition="2" transparent="1">
 <convert type="ServicePosition">Position</convert>
 </widget>
 <widget source="session.CurrentService" render="Label" position="327,98" size="180,40" font="Regular;32" halign="left"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
@@ -2560,7 +2560,7 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 
 <widget source="session.CurrentService" render="Label" position="1435,98" size="180,40" font="Regular;32" halign="right"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
 <convert type="ServicePosition">Remaining</convert>
 </widget>
-<ePixmap position="900,166" zPosition="1" size="150,25" pixmap="MX_HQ7/mp_buttons.png" alphatest="blend"/>
+<ePixmap position="900,166" zPosition="1" size="150,25" pixmap="MX_HQ7/sfteam/mp_buttons.png" alphatest="blend"/>
 </screen>
 <screen name="MyTubePlayerMainScreen" position="center,145" size="1780,880" title="MyTubePlayerMainScreen...">
 <ePixmap pixmap="MX_HQ7/menu/bb2.png" position="18,798" size="1744,74" zPosition="-1" alphatest="on"/>
@@ -3058,7 +3058,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (48, 48), png = 3), # in
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="text" position="30,20" size="820,45" font="Regular;32" halign="center" valign="center" foregroundColor="button" backgroundColor="bgbutton"/>
 <widget name="entries" position="20,80" size="820,560" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
@@ -3573,7 +3573,7 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 6), # index 
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="list" render="Listbox" enableWrapAround="1" position="20,20" size="820,600" zPosition="1" scrollbarMode="showNever" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x60.png" selectionPixmap="MX_HQ7/menu/button820x60.png" transparent="1">
 <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryPixmapAlphaTest(pos = (15, 15), size = (40, 40), png = 0),
@@ -3726,7 +3726,7 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <ePixmap pixmap="MX_HQ7/menu/streamm.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="streamlist" position="20,20" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -3736,10 +3736,10 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 </widget>
 </screen>
 <screen name="StreamTVPlayer" position="0,825" size="1920,255" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_HQ7/moviebar.png"/>
-<ePixmap position="100,98" size="150,100" zPosition="10" pixmap="MX_HQ7/movie.png" alphatest="blend"/>
-<ePixmap position="95,39" size="180,32" zPosition="10" pixmap="MX_HQ7/ster.png" alphatest="blend"/>
-<ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="MX_HQ7/camera.png" alphatest="blend"/>
+<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_HQ7/sfteam/moviebar.png"/>
+<ePixmap position="100,98" size="150,100" zPosition="10" pixmap="MX_HQ7/sfteam/movie.png" alphatest="blend"/>
+<ePixmap position="95,39" size="180,32" zPosition="10" pixmap="MX_HQ7/sfteam/ster.png" alphatest="blend"/>
+<ePixmap position="1670,98" size="150,100" zPosition="10" pixmap="MX_HQ7/sfteam/camera.png" alphatest="blend"/>
 <widget source="global.CurrentTime" render="Label" position="1650,30" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
@@ -3755,7 +3755,7 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <widget name="channel_name" position="315,35" size="1275,40" font="Regular;34" halign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget name="channel_icon" position="240,103" zPosition="12" size="35,35" alphatest="blend" />
 <widget name="channel_uri" position="315,98" size="1275,60" font="Regular;26" halign="center" foregroundColor="button" backgroundColor="bgosd" transparent="1"/>
-<ePixmap position="900,164" zPosition="1" size="150,25" pixmap="MX_HQ7/mp_buttons.png" alphatest="blend"/>
+<ePixmap position="900,164" zPosition="1" size="150,25" pixmap="MX_HQ7/sfteam/mp_buttons.png" alphatest="blend"/>
 </screen>
 <screen name="WirelessAccessPoint" position="center,225" size="1300,720" title="Wireless Access Point">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
@@ -3861,7 +3861,7 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <ePixmap pixmap="MX_HQ7/menu/lan.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="menu" position="20,20" size="820,595" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x35.png" selectionPixmap="MX_HQ7/menu/button820x35.png" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -4264,7 +4264,7 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="lab1" position="30,30" size="810,590" font="Regular;26" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -4342,7 +4342,7 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <widget source="session.VideoPicture" render="Pig" position="1220,20" size="540,317" zPosition="3" backgroundColor="#ff000000" />
 <widget name="CoverBg" position="1220,20" size="540,770" zPosition="4" alphatest="off" transparent="0" pixmap="MX_HQ7/menu/cover_bg.png" />
 <widget name="Cover" position="1340,100" size="300,425" zPosition="5" alphatest="blend" />
-<widget source="session.CurrentService" render="Progress" position="1290,340" zPosition="1" pixmap="MX_HQ7/progress.png" size="400,22" borderWidth="2" borderColor="grey">
+<widget source="session.CurrentService" render="Progress" position="1290,340" zPosition="1" pixmap="MX_HQ7/sfteam/progress.png" size="400,22" borderWidth="2" borderColor="grey">
 <convert type="ServicePosition">Position</convert>
 </widget>
 <widget name="list" position="20,100" size="1180,680" zPosition="2" CoolFont="Regular;30" CoolSelectFont="Regular;30" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="800" CoolFolderSize="800"  CoolDatePos="1000" CoolDateWidth="190" CoolTitleColor="1" CoolDateColor="1" CoolHighlightColor="0" CoolProgressPos="700" CoolBarPos="850" CoolBarHPos="15" CoolBarSize="55,10" CoolBarSizeSa="110,16" itemHeight="40" enableWrapAround="1" DefaultColor="#ffffff" UnwatchedColor="#ffffff" WatchingColor="#004fa7ff" FinishedColor="#00aa00" RecordingColor="#ff6464" BackColorSel="#21067bd2"  FrontColorSel="#ffffff" foregroundColor="#ffffff" backgroundColor="bgbutton" scrollbarMode="showNever" backgroundPixmap="MX_HQ7/menu/bg1180x40c.png" selectionPixmap="MX_HQ7/menu/button1180x40c.png" transparent="1"/>
@@ -4385,9 +4385,9 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <widget name="key_blue" position="1395,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="EMCMediaCenter" position="0,825" size="1920,255" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_HQ7/moviebar.png"/>
-<ePixmap position="1670,98" size="130,100" zPosition="10" pixmap="MX_HQ7/movie2.png" alphatest="blend"/>
-<ePixmap position="100,80" size="130,130" zPosition="1" pixmap="MX_HQ7/movie3.png" alphatest="blend"/>
+<ePixmap position="0,0" zPosition="-1" size="1920,255" pixmap="MX_HQ7/sfteam/moviebar.png"/>
+<ePixmap position="1670,98" size="130,100" zPosition="10" pixmap="MX_HQ7/sfteam/movie2.png" alphatest="blend"/>
+<ePixmap position="100,80" size="130,130" zPosition="1" pixmap="MX_HQ7/sfteam/movie3.png" alphatest="blend"/>
 <widget name="Cover" position="100,30" size="130,185" zPosition="10" alphatest="on" />
 <widget source="global.CurrentTime" render="Label" position="1650,30" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -4401,18 +4401,18 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <widget source="session.CurrentService" render="Label" position="325,35" size="1130,50" font="Regular;38" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
-<ePixmap position="1466,34" size="62,44" zPosition="1" pixmap="MX_HQ7/ico_dolby_off.png" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" position="1466,34" size="62,44" zPosition="2" pixmap="MX_HQ7/ico_dolby_on.png" alphatest="blend">
+<ePixmap position="1466,34" size="62,44" zPosition="1" pixmap="MX_HQ7/sfteam/ico_dolby_off.png" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" position="1466,34" size="62,44" zPosition="2" pixmap="MX_HQ7/sfteam/ico_dolby_on.png" alphatest="blend">
 <convert type="ServiceInfo">IsMultichannel</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
 <ePixmap pixmap="MX_HQ7/ico_format_off.png" position="1545,34" zPosition="1" size="62,44" alphatest="blend"/>
-<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/ico_format_on.png" position="1545,34" size="62,44" zPosition="2" alphatest="blend">
+<widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ7/sfteam/ico_format_on.png" position="1545,34" size="62,44" zPosition="2" alphatest="blend">
 <convert type="ServiceInfo">IsWidescreen</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<ePixmap pixmap="MX_HQ7/recbg.png" position="1636,131" size="30,30" zPosition="1" alphatest="blend"/>
-<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/rec_1.png" position="1636,131" size="30,30" zPosition="2" alphatest="blend"> 
+<ePixmap pixmap="MX_HQ7/sfteam/recbg.png" position="1636,131" size="30,30" zPosition="1" alphatest="blend"/>
+<widget source="session.RecordState" render="Pixmap" pixmap="MX_HQ7/sfteam/rec_1.png" position="1636,131" size="30,30" zPosition="2" alphatest="blend"> 
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
 <widget source="session.CurrentService" render="Label" font="Regular;28" position="302,162" size="87,36" halign="right"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
@@ -4422,8 +4422,8 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <widget source="session.CurrentService" render="Label" font="Regular;28" position="413,162" size="87,36" halign="left"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
 <convert type="ServiceInfo">VideoHeight</convert>
 </widget>
-<ePixmap position="328,143" zPosition="1" size="1280,8" pixmap="MX_HQ7/slidermovie_bg.png"/>
-<widget source="session.CurrentService" render="Progress" pixmap="MX_HQ7/slidermovie.png" position="328,143" size="1280,8" zPosition="2" transparent="1">
+<ePixmap position="328,143" zPosition="1" size="1280,8" pixmap="MX_HQ7/sfteam/slidermovie_bg.png"/>
+<widget source="session.CurrentService" render="Progress" pixmap="MX_HQ7/sfteam/slidermovie.png" position="328,143" size="1280,8" zPosition="2" transparent="1">
 <convert type="ServicePosition">Position</convert>
 </widget>
 <widget source="session.CurrentService" render="PositionGauge"	position="326,138" size="1273,20" zPosition="2" transparent="1" >
@@ -4438,7 +4438,7 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <widget source="session.CurrentService" render="Label" position="1435,98" size="180,40" font="Regular;32" halign="right"  foregroundColor="button" backgroundColor="bgosd" transparent="1">
 <convert type="ServicePosition">Remaining</convert>
 </widget>
-<ePixmap position="900,166" zPosition="1" size="150,25" pixmap="MX_HQ7/mp_buttons.png" alphatest="blend"/>
+<ePixmap position="900,166" zPosition="1" size="150,25" pixmap="MX_HQ7/sfteam/mp_buttons.png" alphatest="blend"/>
 </screen>
 <screen name="EnhancedMovieCenterMenu" position="center,225" size="1300,720" title="EnhancedMovieCenterMenu">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,636" size="1264,74" zPosition="-1" alphatest="on"/>
@@ -4467,7 +4467,7 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="title" render="Label" position="20,17" size="820,35" font="Regular;30" backgroundColor="bgmain" halign="center" transparent="1"/>
 <widget source="menu" render="Listbox" position="20,60" size="820,560" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1">
 <convert type="StringList" />
@@ -4525,7 +4525,7 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <screen name="MovieInfoPreview" position="center,225" size="1300,720" title="Movie Information Preview">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,636" size="1264,74" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/film.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="movie_name" position="20,20" size="820,35" font="Regular;30" backgroundColor="bgmain" halign="center" transparent="1"/>
 <widget name="previewtext" position="20,70" size="820,550" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
@@ -4569,7 +4569,7 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 </screen>
 <screen name="getCover" position="center,225" size="1300,720" title="EMC Cover Selecter">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,636" size="1264,74" zPosition="-1" alphatest="on"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="poster" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <widget name="menulist" position="20,20" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget name="info" position="20,660" size="820,550" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
@@ -4606,7 +4606,7 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <convert type="ServicePosition">Position</convert>
 </widget>
 <eLabel backgroundColor="#00000000" position="410,126" size="1100,2" foregroundColor="#00000000" />
-<widget name="seekbarcursor" position="410,119" size="18,18" zPosition="4" pixmap="MX_HQ7/seekbutton2.png" alphatest="on" />
+<widget name="seekbarcursor" position="410,119" size="18,18" zPosition="4" pixmap="MX_HQ7/sfteam/seekbutton2.png" alphatest="on" />
 <widget source="session.CurrentService" render="PositionGauge" position="410,118" size="1100,18" zPosition="2" pointer="MX_HQ7/pointer2.png:18,4" transparent="1">
 <convert type="ServicePosition">Gauge</convert>
 </widget>
@@ -4799,7 +4799,7 @@ MultiContentEntryText(pos = (75, 6), size = (700, 54), font=0, flags = RT_HALIGN
 </screen>
 <screen name="Config" position="center,225" size="1300,720" title="Autobackup Configuration">
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,636" size="1264,74" zPosition="-1" alphatest="on"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
 <widget name="config" position="20,20" size="820,520" font="Regular;26" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget name="status" position="20,560" size="780,35" halign="left" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
@@ -4825,7 +4825,7 @@ MultiContentEntryText(pos = (75, 6), size = (700, 54), font=0, flags = RT_HALIGN
 <ePixmap pixmap="MX_HQ7/menu/searchh.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="config" position="20,20" size="820,600" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x35.png" selectionPixmap="MX_HQ7/menu/button820x35.png" transparent="1"/>
 <widget name="introduction" render="Label" position="20,570" zPosition="1" size="800,55" halign="center" valign="center" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
@@ -4841,7 +4841,7 @@ MultiContentEntryText(pos = (75, 6), size = (700, 54), font=0, flags = RT_HALIGN
 <ePixmap pixmap="MX_HQ7/menu/searchh.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="frontend" pixmap="MX_HQ7/icons/scan-s.png" position="22,22" size="64,64" transparent="1" alphatest="blend"/>
 <widget name="scan_progress" position="20,110" size="800,30" borderWidth="2" borderColor="#cccccc"/>
 <widget name="scan_state" position="20,150" size="800,35" zPosition="2" font="Regular;30" backgroundColor="transpBlack" transparent="1"/>
@@ -4950,7 +4950,7 @@ MultiContentEntryText(pos = (75, 6), size = (700, 54), font=0, flags = RT_HALIGN
 <ePixmap pixmap="MX_HQ7/menu/aboutt.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="text" position="20,20" zPosition="1" size="800,600" halign="left" enableWrapAround="1" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -5070,7 +5070,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="nodelist" position="20,20" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget name="helptext" position="30,580" size="810,50" font="Regular;28" zPosition="1" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1" />
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
@@ -5087,7 +5087,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <widget name="progress" position="20,40" size="820,8" borderWidth="1" borderColor="#cccccc" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -5103,7 +5103,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="progress" position="20,40" size="820,8" borderWidth="1" borderColor="#cccccc" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
@@ -5163,7 +5163,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton"/> 
+<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget name="list" position="20,20" size="820,600" font="Regular;32" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>

@@ -780,7 +780,7 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
 <eLabel position="1220,195" size="540,600" zPosition="-1" backgroundColor="bgbutton"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow_h.png" position="120,810" size="48,48" alphatest="blend"/>
-<eLabel text="SFteam Oficial" position="600,652" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
+<eLabel text="SFteam Oficial" position="640,820" size="200,105" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/> 
 <ePixmap pixmap="MX_HQ7/menu/exit.png" position="1692,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/ok.png" position="1332,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/menubutton.png" position="1452,810" size="48,48" alphatest="blend"/>

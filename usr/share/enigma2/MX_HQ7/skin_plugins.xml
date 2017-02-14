@@ -199,6 +199,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 7), size = (40, 40), png = 3),
 <ePixmap pixmap="MX_HQ7/menu/ntpmenu.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ7/buttons/menu.png" position="225,650" size="65,50" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>

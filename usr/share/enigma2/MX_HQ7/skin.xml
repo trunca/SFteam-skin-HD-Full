@@ -5030,14 +5030,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <eLabel position="20,20" size="820,605" zPosition="-1" backgroundColor="bgbutton"/>
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/bluep.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
-<ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/arrow1.png" position="40,650" size="48,48" alphatest="blend"/>
 <widget name="config" position="20,20" size="820,200" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <widget name="info" position="30,220" size="810,400" font="Regular;20" zPosition="1" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
-<ePixmap pixmap="MX_HQ7/buttons/red48x48.png" position="278,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ7/buttons/yellow48x48.png" position="278,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/green48x48.png" position="626,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/blue48x48.png" position="926,650" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="338,640" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<ePixmap pixmap="MX_HQ7/menu/exitred.png" position="1212,650" size="48,48" alphatest="blend"/>
+<widget name="key_yellow" position="338,640" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_green" position="686,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_blue" position="986,640" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
